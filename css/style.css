@@ -118,6 +118,16 @@ body {
     line-height: 150%;
 }
 
+.img-gallery {
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+}
+
+.img-gallery-item {
+    width: 150px;
+    height: 106px;
+}
 .film-trailer {
     margin: auto;
 }
@@ -290,6 +300,10 @@ body {
     .select-cinema {
         width: 100%;
     }
+    .img-gallery-item {
+        width: 156px;
+        height: 106px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -311,6 +325,10 @@ body {
     }
     .nav-menu-item {
         margin-right: 20px;
+    }
+    .img-gallery-item {
+        width: 115px;
+        height: 65px;
     }
 }
 
@@ -412,6 +430,10 @@ body {
     .header {
         background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.jpg') no-repeat center top / cover;
     }
+    .img-gallery-item {
+        width: 87px;
+        height: 53px;
+    }
 }
 @media (max-width: 500px) {
     .header {
@@ -441,6 +463,10 @@ body {
         padding: 16px 30px;
         display: block;
         white-space: nowrap;
+    }
+    .img-gallery-item {
+        width: 65px;
+        height: 42px;
     }
 }
 @media (max-width: 400px) {
@@ -500,5 +526,9 @@ body {
         display: block;
         white-space: nowrap;
         order: 3;
+    }
+    .img-gallery-item {
+        width: 47px;
+        height: 33px;
     }
 }
