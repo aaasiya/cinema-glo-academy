@@ -437,8 +437,8 @@ body {
     }
     .button-pay {
         font-size: 14px;
-        line-height: 16px;
-        padding: 15px 20px;
+        line-height: 18px;
+        padding: 16px 30px;
         display: block;
         white-space: nowrap;
     }
@@ -496,7 +496,7 @@ body {
     .button-pay {
         font-size: 14px;
         line-height: 15px;
-        padding: 15px 20px;
+        padding: 15px 24px;
         display: block;
         white-space: nowrap;
         order: 3;
