@@ -11,10 +11,11 @@ body {
 .container {
     max-width: 1170px;
     margin: auto;
+    width: 90%;
 }
 
 .header {
-    min-height: 100vh;
+    padding-bottom: 60px;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.jpg') no-repeat center top / cover;
 }
 
@@ -56,6 +57,10 @@ body {
     height: 33px;
     border-radius: 50%;
     margin-left: 11px;
+}
+
+.menu-btn {
+    display: none;
 }
 
 .film {
@@ -184,7 +189,7 @@ body {
 }
 
 .select-cinema {
-    min-width: 470px;
+    width: 470px;
 }
 
 .session-cinema-item {
@@ -195,6 +200,10 @@ body {
     background: rgba(36, 36, 36, 0.18);
     border-radius: 10px;
     margin-bottom: 40px;
+}
+
+.scheme-svg {
+    max-width: 1170px;
 }
 
 .scheme path:not(.light) {
@@ -223,6 +232,7 @@ body {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     max-width: 1024px;
+    width: 90%;
     margin: auto;
     padding-top: 22px;
     padding-bottom: 38px;
@@ -272,4 +282,214 @@ body {
     line-height: 21px;
     padding: 24px 52px;
     display: block;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .select-cinema {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .session {
+        flex-wrap: wrap;
+    }
+    .session-date {
+        flex-basis: 70%;
+        margin-bottom: 40px;
+    }
+    .session-time {
+        order: 2;
+    }
+    .session-cinema {
+        order: 3;
+    }
+    .nav-menu-item {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .nav-menu {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        padding: 20px;
+        margin-left: 32px;
+        flex-direction: column;
+        background-color: #621402;
+        padding: 10px;
+        z-index: 9;
+        border-radius: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .nav-menu-item {
+        margin: 8px;
+    }
+    .nav {
+        position: relative;
+    }
+    .menu-btn {
+        display: block;
+        width: 50px;
+        height: 50px;;
+        position: relative;
+        margin-left: 20px;
+    }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+    }
+    .menu-btn span::before,
+    .menu-btn span::after {
+        content: '';
+        display: block;
+        transition: 0.4s;
+    }
+    .menu-btn span::before {
+        transform: translateY(-5px);
+    }
+    .menu-btn span::after {
+        transform: translateY(5px);
+    }
+    .menu-btn-active span::before {
+        transform: rotate(-35deg);
+        width: 10px;
+        transform-origin: left top;
+    }
+    .menu-btn-active span::after {
+        transform: rotate(35deg);
+        width: 10px;
+        transform-origin: left bottom;
+    }
+    .film-info-description {
+        margin-right: 30px;
+    }
+    .film {
+        flex-direction: column;
+    }
+    .film-trailer {
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .session-date {
+        margin-bottom: 25px;
+    }
+    .session-time {
+        margin-bottom: 25px;
+    }
+    .session-label {
+        margin-bottom: 10px;
+    }
+    .session-date-block {
+        margin-top: 20px;
+    }
+    .header {
+        background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.jpg') no-repeat center top / cover;
+    }
+}
+@media (max-width: 500px) {
+    .legend {
+        max-width: 400px;
+        width: 90%;
+        margin: auto;
+    }
+    .legend-label {
+        width: 28%;
+        font-size: 12px;
+    }
+    .legend-label svg {
+        width: 30px;
+        height: 25px;
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        width: 100%;
+    }
+    .session-date-item {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+    .session-month {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .session-day {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .session-week {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .session-date {
+        width: 100%;
+    }
+    .legend {
+        max-width: 400px;
+        width: 70%;
+        margin: auto;
+    }
+    .legend-label {
+        font-size: 10px;
+    }
+    .legend-label svg {
+        width: 30px;
+        height: 25px;
+    }
+    .price {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .price-tag {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        white-space: nowrap;
+    }
+    .price-label {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .price-price {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .button-pay {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 15px 30px;
+        display: block;
+        white-space: nowrap;
+        order: 3;
+    }
 }

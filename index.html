@@ -23,6 +23,11 @@
                 <img src="img/logo.svg" alt="logo" class="img">
             </a>
             <nav class="nav">
+                <div class="menu-button-section">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
                         <a href="#" class="nav-menu-link">Главная</a>
@@ -142,7 +147,7 @@
         </div>
     </header>
     <div class="scheme container">
-        <svg class="scheme-svg" width="1170" height="600" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="scheme-svg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear)"/>
         <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
         <path class="booked" d="M140.5 135C137.186 135 134.5 137.686 134.5 141V154C134.5 157.314 137.186 160 140.5 160H156.5C159.814 160 162.5 157.314 162.5 154V141C162.5 137.686 159.814 135 156.5 135H140.5Z"/>
@@ -324,7 +329,7 @@
             </div>
             <!-- /.legend-active -->
             <div class="legend-booked legend-label">
-                <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="38" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="booked" d="M11.3125 1C7.99879 1 5.3125 3.68629 5.3125 7V20C5.3125 23.3137 7.99879 26 11.3125 26H27.3125C30.6262 26 33.3125 23.3137 33.3125 20V7C33.3125 3.68629 30.6262 1 27.3125 1H11.3125Z"/>
                 </svg>
                 <span class="legend-text legend-booked">Занято</span>
@@ -336,8 +341,10 @@
     <div class="price container">
         <div class="price-tag">
             <span class="price-label">Всего к оплате</span>
-            <span class="price-total">0</span>
-            <span class="ruble">₽</span>
+            <div class="price-price">
+                <span class="price-total">0</span>
+                <span class="ruble">₽</span>
+            </div>
         </div>
         <!-- /.price-tag -->
         <a href="#" class="button button-pay">Перейти к оплате</a>
