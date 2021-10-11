@@ -208,7 +208,6 @@ body {
 
 .scheme path:not(.light) {
     fill: rgba(255, 255, 255, 0.2);
-    transition: 0.15s;
     cursor: pointer;
 }
 
@@ -415,6 +414,14 @@ body {
     }
 }
 @media (max-width: 500px) {
+    .header {
+        width: 100%;
+    }
+    .session-date-item {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
     .legend {
         max-width: 400px;
         width: 90%;
@@ -428,15 +435,17 @@ body {
         width: 30px;
         height: 25px;
     }
+    .button-pay {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 15px 20px;
+        display: block;
+        white-space: nowrap;
+    }
 }
 @media (max-width: 400px) {
     .header {
         width: 100%;
-    }
-    .session-date-item {
-        width: 80px;
-        height: 80px;
-        margin-right: 10px;
     }
     .session-month {
         font-size: 13px;
@@ -486,8 +495,8 @@ body {
     }
     .button-pay {
         font-size: 14px;
-        line-height: 21px;
-        padding: 15px 30px;
+        line-height: 15px;
+        padding: 15px 20px;
         display: block;
         white-space: nowrap;
         order: 3;
